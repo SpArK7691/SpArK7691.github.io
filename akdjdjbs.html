@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Блочная верстка на HTML5</title>
+        <style>
+            div{
+                margin-left: 30px;
+                font-size: 20px;
+                background-color: #eee;
+            }
+            #header{
+                background-color: #eee;
+                border: none;
+                margin-bottom: 0px;
+            }
+            #sidebarright{
+                background-color: #bbb;
+                width: 150px;
+                float: right;
+            }
+            #main{
+                background-color: #313131;
+                height: 200px;
+                margin-right: 170px;
+                border: none;
+            }
+            #content{
+                background-color: #eee;
+                margin-right: 180px;
+            }
+            #floater{
+                background-color: #ccc;
+            }
+            ul.nav{
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                overflow: hidden;
+                background-color: #ccc;
+                border-top: 1px solid #a8a8a8;
+                border-bottom: 1px solid #a8a8a8;
+            }
+            .nav li{
+                float: left;
+            }
+            ul.nav a {
+                display: block;
+                padding: 10px 16px;
+                border-right: 1px solid #a8a8a8;
+                text-decoration: none;
+                color: #333;
+                text-align: center;
+            }
+            ul.nav a:hover{
+                background-color: #333;
+                color: #f4f4f4;
+            }
+            ul.nav li:last-child a {
+                border-right: none;
+            }
+        </style>
+    </head>
+    <body style="font-family: corbel; background-color: #eee;">
+        <div id="header">
+            <h1>ВЕРСТКА САЙТА</h1>
+        </div>
+        <ul class="nav">
+            <li><a href="#"><b>Главная</b></a></li>
+            <li><a href="#"><b>Блог</b></a></li>
+            <li><a href="#"><b>Форум</b></a></li>
+            <li><a href="#"><b>Контакты</b></a></li>
+            <li><a href="#"><b>О сайте</b></a></li>
+        </ul>
+        <div id="sidebarright">Сайдбар</div>
+        <div id="main">
+            <div id="content">Основной контент</div>
+        </div>
+        <div id="floater"> Футер</div>
+    </body>
+</html>
